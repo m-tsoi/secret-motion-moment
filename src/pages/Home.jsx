@@ -8,7 +8,7 @@ function MyButton() {
     <motion.button 
       animate={{rotate: 360}} 
       whileHover ={{scale: 1.2}} 
-      onClick={() => navigate("/about")}
+      onClick={() => navigate("/guess")}
       whileTap={{ scale: 0.9 }}
     >
       Enter
@@ -24,7 +24,7 @@ export default function Home(){
       animate={{opacity: 1, y: 0}}
       transition={{duration: 0.8}}
     >
-      <motion.h1>Welcom</motion.h1>
+      <motion.h1>Guess That Character!</motion.h1>
       <MyButton/>
     </motion.div>);
 }

@@ -80,3 +80,96 @@ button:active {
   justify-content: center;
   height: 100vh;
 }
+
+.modern-form {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --primary-light: rgba(59, 130, 246, 0.1);
+  --success: #10b981;
+  --text-main: #1e293b;
+  --text-secondary: #64748b;
+  --bg-input: #f8fafc;
+
+  position: relative;
+  width: 300px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  justify-content: center;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 1px rgba(148, 163, 184, 0.1);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: var(--bg-input);
+  color: var(--text-main);
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.submit-button {
+  align-items: center; 
+  justify-content: center;
+  width: 28px;
+  height: 40px;
+  background: var(--green-bg);
+  border: none;
+  border-radius: 25%;
+  display: flex;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+/* Image Stylin*/
+.result-image {
+  margin-top: 1rem;
+  width: 400px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+/*hints*/
+.floating-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* so it doesn't block clicking */
+  overflow: hidden;
+}
+
+.floating-hint {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.floating-image {
+  height: 60px;
+}

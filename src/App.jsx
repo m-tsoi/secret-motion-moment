@@ -1,11 +1,11 @@
 
-import "./App.css"
+import "./styles/App.css"
 import { BrowserRouter, Routes, Route, useLocation, Link } from "react-router-dom"
 import {AnimatePresence, motion } from "motion/react";
 import { useState, useEffect } from "react";
 
-import Home from "./components/Home"
-import About from "./components/About"
+import Home from "./pages/Home"
+import Guess from "./pages/Guess"
 import StarTransition from "./components/StarTransition"
 
 
@@ -34,7 +34,7 @@ export default function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/guess" element={<Guess />} />
         </Routes>
       </AnimatePresence>
     </>
