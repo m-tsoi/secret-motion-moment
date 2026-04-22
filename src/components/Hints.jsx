@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
 
 import "../styles/App.css";
-import fluffy from "../assets/fluffy.png";
+import imageHint from "../assets/single_moms.jpeg";
 
 
 const hints = [
-  { type:"text", content: "Red" },
-  { type:"text", content: "Part of the Joui 4" },
-  { type:"text", content: "Voted Most Likely to be a Buisness Major" },
-  { type:"text", content: "哈哈哈哈哈哈哈哈哈" },
-  { type:"image", content: fluffy },
+  { type:"text", content: "👻" },
+  { type:"text", content: "👻👻👻" },
+  { type:"text", content: "👻👻👻👻" },
+  { type:"text", content: "#2 Tumblr Sexyman" },
+  { type:"image", content: imageHint },
 ];
 
 export default function Hints({attempts}){

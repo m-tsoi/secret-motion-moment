@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { useEffect, useState, useRef } from "react";
 
 import "../styles/App.css";
-import sakamotoTweet from "../assets/ball.png";
+import revealTweet from "../assets/heaven.png";
 
 import Hints from "../components/Hints";
 import GuessForm from "../components/GuessForm";
@@ -14,7 +14,7 @@ export default function Guess() {
   const [guess, setGuess] = useState("");
   const [result, setResult] = useState(null);
 
-  const answer = "Sakamoto Tatsuma";
+  const answer = "Reigen Arataka";
 
   const jsConfettiRef = useRef(null);
 
@@ -59,7 +59,7 @@ export default function Guess() {
       <ResultDisplay
         result={result}
         count={count}
-        image={sakamotoTweet}
+        image={revealTweet}
       />
 
       <GuessForm
