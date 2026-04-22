@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { useEffect, useState, useRef } from "react";
 
 import "../styles/App.css";
-import sakamotoTweet from "../assets/sakamoto_tweet.png";
+import sakamotoTweet from "../assets/ball.png";
 
 import Hints from "../components/Hints";
 import GuessForm from "../components/GuessForm";
